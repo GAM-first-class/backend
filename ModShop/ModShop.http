@@ -1,0 +1,6 @@
+@ModShop_HostAddress = http://localhost:5250
+
+GET {{ModShop_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

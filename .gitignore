@@ -1,0 +1,47 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Visual Studio cache
+*.cache
+*.opendb
+*.VC.db
+
+# NuGet
+*.nupkg
+packages/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Publish output
+publish/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.suo
+*.user
+
+# Sensitive configuration
+secrets.json
+appsettings.Development.json
