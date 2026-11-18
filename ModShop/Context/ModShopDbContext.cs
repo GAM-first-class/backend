@@ -5,6 +5,6 @@ namespace ModShop.Data
 {
     public sealed class ModShopDbContext(DbContextOptions<ModShopDbContext> options) : DbContext(options)
     {
-
+        public DbSet<User> Users { get; set; } = null!;
     }
 }

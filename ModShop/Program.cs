@@ -1,12 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using ModShop.Data;
+using ModShop.IServices;
+using ModShop.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ModShopDbContext>(options =>
