@@ -45,3 +45,9 @@ Thumbs.db
 # Sensitive configuration
 secrets.json
 appsettings.Development.json
+
+# Local Visual Studio dependencies
+**/serviceDependencies.local.json
+
+# Local backend folder
+/backend/
