@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ModShop.Entities;
+using ModShop.Entities.OrderAggregates;
 
 namespace ModShop.Data
 {
@@ -9,6 +10,8 @@ namespace ModShop.Data
         public DbSet<Category> Categories { get; set; } = null!;
         public DbSet<Brand> Brands { get; set; } = null!;
         public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
     }
 }
