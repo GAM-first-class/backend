@@ -15,8 +15,10 @@ builder.Services.AddDbContext<ModShopDbContext>(options =>
     {
         options.UseSqlServer("Server=.;Database=ModShopDb;Trusted_Connection=True;TrustServerCertificate=True;");
     });
+builder.Services.AddScoped<IProductService,ProductService >();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IBrandService, BrandService>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
