@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ModShop.IServices;
 
-namespace ModShop.Controller;
+namespace ModShop.Controllers;
 
 [ApiController]
 public class UserController(IUserService userServices) : ControllerBase
